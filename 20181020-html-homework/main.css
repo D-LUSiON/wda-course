@@ -1,0 +1,65 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+ul.genere-tabs li,
+.genere-tabs label {
+    display: inline-block;
+    margin: 0 3px;
+    padding: 3px 12px 3px 3px;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+ul.genere-tabs li:last-of-type,
+.genere-tabs label:last-of-type {
+    border-right: none;
+}
+
+ul.playlist li {
+    list-style: none;
+    padding: 3px;
+}
+
+ul.playlist li:before {
+    content: '\025BA';
+    margin-right: 3px;
+    font-size: .75em;
+}
+
+ul.genere-tabs li[data-genere="heavy_metal"],
+ul.playlist li[data-genere="heavy_metal"]:before {
+    color: #ee4242;
+}
+ul.playlist li[data-genere="heavy_metal"]:hover {
+    background-color: #ee4242;
+}
+
+ul.genere-tabs li[data-genere="rock"],
+ul.playlist li[data-genere="rock"]:before {
+    color: #6742ee;
+}
+
+ul.playlist li[data-genere="rock"]:hover {
+    background-color: #6742ee;
+}
+
+ul.genere-tabs li[data-genere="ethno"],
+ul.playlist li[data-genere="ethno"]:before {
+    color: #238330;
+}
+
+ul.playlist li[data-genere="ethno"]:hover {
+    background-color: #238330;
+}
+
+ul.genere-tabs li[data-genere="jazz"],
+ul.playlist li[data-genere="jazz"]:before {
+    color: #b83a8e;
+}
+
+ul.playlist li[data-genere="jazz"]:hover {
+    background-color: #b83a8e;
+}
