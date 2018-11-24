@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+
+.col {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #888;
+}
+
+.col.col-50 {
+    width: 100%;
+    float: left;
+}
+
+/* tablets */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .col.col-50 {
+        width: 50%;
+    }
+}
+
+/* laptops */
+
+@media (min-width: 1024px) {
+    .col.col-50 {
+        width: 33.333%;
+    }
+}

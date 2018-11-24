@@ -1,0 +1,29 @@
+$color-parent: #34DA51;
+$color-child: #5334da;
+
+@mixin fancy-border($width, $style) {
+    $arg: width $style;
+    border: {
+        top: $arg green;
+        left: $arg lightgreen;
+        bottom: $arg yellow;
+        right: $arg orange;
+    };
+}
+
+.parent {
+    @include fancy-border(5px, solid);
+
+    width: 10rem;
+    height: 10rem;
+    padding: 2.5rem;
+    background-color: $color-parent;
+    .child {
+        @include fancy-border(2px, dashed);
+
+        width: 5rem;
+        height: 5rem;
+        background-color: $color-child;
+        // color: #010203 + #040506
+    }
+}

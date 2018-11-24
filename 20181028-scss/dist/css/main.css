@@ -1,0 +1,21 @@
+.parent {
+  border-top: width solid green;
+  border-left: width solid lightgreen;
+  border-bottom: width solid yellow;
+  border-right: width solid orange;
+  width: 10rem;
+  height: 10rem;
+  padding: 2.5rem;
+  background-color: #34DA51;
+}
+.parent .child {
+  border-top: width dashed green;
+  border-left: width dashed lightgreen;
+  border-bottom: width dashed yellow;
+  border-right: width dashed orange;
+  width: 5rem;
+  height: 5rem;
+  background-color: #5334da;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div style="color: red">Color to be changed...</div>
+    <script>
+        const el = document.querySelector('div');
+        // let i = 0;
+        // function colorChanger() {
+        //     setTimeout(() => {
+        //         const color = el.style['color'];
+        //         el.style['color'] = (color === 'red') && 'blue' && 'red';
+
+        //         i++;
+        //         console.log(i);
+                
+        //         if (i < 10)
+        //             colorChanger();
+        //     }, 1000);
+        // }
+
+        // colorChanger();
+        let i = 0;
+        const int = setInterval(() => {
+            const color = el.style['color'];
+            el.style['color'] = (color === 'red') ? 'blue' : 'red';
+            console.log((color === 'red') && 'blue' && 'red');
+            
+            i++;
+            if (i > 10)
+                clearInterval(int);
+        }, 1000);
+    </script>
+</body>
+
+</html>
